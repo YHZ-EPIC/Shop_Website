@@ -1,0 +1,309 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variable */
+
+:root{
+    --nav-height: 63px;
+}
+
+/* NAVBAR PART */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    /* background-color: bisque; */
+    color: black;
+    height: var(--nav-height);
+    opacity: 0.75;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    color: white;
+    display: block;
+    list-style: none;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 22px;
+    cursor: pointer;
+
+}
+#navbar ul li:hover{
+    color: black;
+    background-color: white;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 3px 22px;
+    cursor: pointer;
+}
+
+#navbar img{
+    display: inline-block;
+    cursor: pointer;
+    margin: 2ch;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    /* background: url("assets/bg_image.jpg") no-repeat center center/cover; */
+    background-image: url("assets/bg_pic.jpeg");
+    position: absolute;
+    height: 79%;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+
+#home h1{
+    font-size: 5rem;
+    color: wheat;
+    text-align: center;
+    /* margin-top: 4.5rem; */
+    padding: 12px;
+
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn{
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+}
+
+.service{
+    margin-top: 5.5rem;
+}
+
+.h-pri{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 12px;
+    font-weight: lighter;
+    font-family: 'Bree Serif', serif;
+}
+
+.box{
+    border: solid 2px red;
+    padding: 1rem;
+    display: block;
+    width: 29%;
+    height: 15%; 
+    float:left;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    color: black;
+
+    /* border: 3px solid orange; */
+}
+
+.box img{
+    display: block;
+    margin: auto;
+    width: 210px;
+    height: 210px;
+
+    border-radius: 20px;
+}
+
+.box p{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client Section  */
+
+#client-section{
+    margin-top: 28rem;
+    /* margin-bottom: 28rem; */
+    height: 349px;
+    /* border: solid 10px green; */
+    /* display: block;
+    align-items: center;
+    justify-content: center; */
+}
+
+#client-section::before{
+    margin-top: 5.8rem;
+    content: "";
+    /* background-color: black; */
+    background-color: #f2f2f2;
+    border: solid 3px black;
+    border-radius: 22px;
+    /* background: url("assets/bg.jpg") no-repeat center center/cover; */
+    position: absolute;
+    height: 29%;
+    width: 99%;
+    opacity: 0.69;
+    z-index: -1;
+}
+
+#client-section h1{
+    /* border: solid 5px blue;  */
+    /* background-color: orange; */
+    /* flex-direction: column; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-family: 'Bree Serif', serif;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid red; */
+}
+
+.client-item img{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 145px;
+    border-radius: 50%;
+    padding: 34px;
+
+    position:relative; 
+    left:80px; 
+    top:2rem
+
+}
+
+/* FOOTER */
+
+.footer-center{
+    position: relative;
+    display: block;
+    padding: 8px 30px;
+    left: 0;
+    bottom: 0;
+    width: 95.5%;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+/* REGISTRATION FORM  */
+
+#contact::before{
+    content: "";
+    background-color: #f2f2f2;
+    border: solid 3px black;
+    border-radius: 22px;
+    /* background: url("assets/bg.jpg") no-repeat center center/cover; */
+    position: absolute;
+    height:65.9%;
+    width: 99%;
+    opacity: 0.69;
+    z-index: -1;
+}
+
+#contact h1{
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+#contact-box input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#contact-box textarea{
+    width: 100%;
+    padding: 12px 0px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
